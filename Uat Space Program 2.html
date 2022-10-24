@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>
+         Welcome To Space
+      </title>
+      <script>
+         function runtimer(){
+
+            crtime=10;
+
+            timeout=0;
+
+
+            for(i=0;i<11;i++){
+
+               setTimeout(function(){
+              document.getElementById("displayCountdown").innerHTML=crtime;
+              crtime=crtime-1;
+
+                  
+               }, timeout);
+               timeout=timeout+1000;
+
+
+               
+            }
+         }
+      </script>
+   </head>
+<h1>UAT Space Image</h1>
+   <body> countdown <span id="displayCountdown"> </span>
+
+
+      <script>
+         runtimer();
+      </script>
+      <img src= "Space Image.JPG" alt="UAT Space Program" width="240" height="240"></img>
+      <p>Ylise's Space Text</p>
+      <button id="btnClickMe" onclick="alert('you clicked here');">Click Me</button>
+   </body>
+</html> 
